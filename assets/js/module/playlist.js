@@ -1,9 +1,3 @@
-
-
-
-
-import { catalogue } from './module/catalogue.js';
-
 const playList = () => {
     console.log("Affichage de la playlist");
 

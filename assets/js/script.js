@@ -3,9 +3,14 @@ import { slider } from "./module/slider.js";
 import { audio } from "./module/audio.js";
 import { playList } from "./module/playlist.js";
 
+// ...
+// Dans la fonction playList, vous utilisez playListHTML.innerHTML pour ajouter les éléments générés à l'élément avec l'ID "playlist".
+
+// ...
 const prevButton = document.querySelector("#prev");
 const nextButton = document.querySelector("#next");
 const playPause = document.querySelector("#play-pause");
+const playListHTML = document.querySelector("#playlist");
 // globalThis permet de partager une variable ou une fonction
 // avec tous mes modules mais aussi elements de mon script;
 globalThis.track = null;
@@ -77,4 +82,4 @@ playPause.addEventListener("click", () => {
 });
 slider();
 audio();
-playList();
+displayPlaylist();
